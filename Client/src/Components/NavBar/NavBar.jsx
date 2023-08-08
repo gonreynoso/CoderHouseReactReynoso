@@ -7,7 +7,6 @@ import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import CartWidget from '../CartWidget/CartWidget';
 import logo from '../../assets/logo-motor.jpg';
 
-
 const NavBar = () => {
   return (
     <>
@@ -19,6 +18,7 @@ const NavBar = () => {
           </Link>
         </div>
         <ul className={styles.navList}>
+
           <li className={styles.navItem}>
             <Link to="/">Home</Link>
           </li>
