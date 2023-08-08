@@ -6,18 +6,19 @@ import { Link } from 'react-router-dom';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import CartWidget from '../CartWidget/CartWidget';
 import logo from '../../assets/logo-motor.jpg';
-import "../../assets/logo.css"
+
 
 const NavBar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-          <Link to="/">
-            <img src={logo} className="logo" alt="logo" />
-            </Link>
-
+        <div className={styles.containerLogo}>
+          <Link className={styles.link} to="/">
+            <img src={logo} className={styles.logo} alt="logo" />
+            <p className={styles.titulo}>MotorEnLínea</p>
+          </Link>
+        </div>
         <ul className={styles.navList}>
-
           <li className={styles.navItem}>
             <Link to="/">Home</Link>
           </li>
