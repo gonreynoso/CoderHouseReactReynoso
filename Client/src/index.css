@@ -1,15 +1,14 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(41, 36, 36);
-  /* min-width: 320px;
-  min-height: 100vh; */
-  display: flex;
-}
+ body {
+  background-color: rgb(196, 194, 194);
+  min-width: 320px;
+  min-height: 100vh;
+}  
 
 /* Config TailwindCSS */
 

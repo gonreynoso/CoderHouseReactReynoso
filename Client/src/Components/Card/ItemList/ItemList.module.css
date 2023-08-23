@@ -1,0 +1,16 @@
+.title{
+ text-align: center;
+}
+
+.container{
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between; 
+ margin: 10px;
+ padding: 10px;
+ align-items: center; /* Centrado vertical */
+ justify-content: center; /* Centrado horizontal */
+ gap: 20px;
+
+}

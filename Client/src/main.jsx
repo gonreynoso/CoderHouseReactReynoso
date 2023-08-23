@@ -20,6 +20,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // CSS
 import './index.css'
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     {/* // 2. Wrap NextUIProvider at the root of your app */}
