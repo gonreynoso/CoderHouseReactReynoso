@@ -1,4 +1,4 @@
-import ItemListContainer from "../../Components/Card/ItemListContainer/ItemListContainer";
+import ItemListContainer from "../../Components/Card/Item/ItemListContainer/ItemListContainer"
 
 const Home = () => {
     return (

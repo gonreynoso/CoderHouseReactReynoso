@@ -7,7 +7,7 @@ import NotFound from "./Views/NotFound/NotFound";
 import './App.css'
 
 import { Routes, Route } from "react-router-dom";
-import ItemDetailContainer from "./Components/Card/ItemDetailContainer/ItemDetailContainer";
+import ItemDetailContainer from "./Components/Card/Detail/ItemDetailContainer/ItemDetailContainer";
 
 
 
@@ -17,14 +17,14 @@ function App() {
 
   return (
     <>
+      <NavBar /> 
       <Routes>
-        <Route path="/*" element={<> <NavBar /> <NotFound /> <Footer /> </>} />
-        <Route path="/" element={<> <NavBar /> <Home /> <Footer /> </>} />
-        <Route path="/item/:id" element={<> <NavBar />  <ItemDetailContainer /> <Footer /> </>} /> 
-
-
-        {/* <Route path="/category/:id" element={<> <NavBar /> <Home /> <Footer /> </>} /> */}
+        <Route path="/*" element={<> <NotFound /> </>} />
+        <Route path="/" element={<> <Home /> </>} />
+        <Route path="/category/:id" element={<> <Home /> </>} />
+        <Route path="/item/:id" element={<> <ItemDetailContainer /> </>} />
       </Routes>
+      <Footer />
     </>
   )
 }

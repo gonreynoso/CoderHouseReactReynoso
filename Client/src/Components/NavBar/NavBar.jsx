@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './NavBar.module.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 // import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import CartWidget from '../Cart/CartWidget/CartWidget';
@@ -13,27 +13,30 @@ const NavBar = () => {
     <>
       <nav className={styles.navbar}>
         <div className={styles.containerLogo}>
-          <Link className={styles.link} to="/">
+          <NavLink className={styles.link} to="/">
             <img src={logo} className={styles.logo} alt="logo" />
             <p className={styles.titulo}>MotorEnLínea</p>
-          </Link>
+          </NavLink>
         </div>
 
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Inicio</NavLink>
           </li>
           <li className={styles.navItem}>
-            <Link to="/about">About</Link>
+            <NavLink to="/category/pickups">Camionetas</NavLink>
           </li>
           <li className={styles.navItem}>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/category/cars">Autos</NavLink>
+          </li>
+          <li className={styles.navItem}>
+            <NavLink to="/category/luxury">Lujo</NavLink>
           </li>
           {/* Esto es de la 1er entrega */}
           <li className={styles.navItem}>
-            <Link to="/cart" className={styles.cartLink}>
+            <NavLink to="/cart" className={styles.cartLink}>
               <CartWidget />
-            </Link>
+            </NavLink>
           </li>
         </ul>
 

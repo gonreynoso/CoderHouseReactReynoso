@@ -43,19 +43,33 @@ const products = [
   },
 ];
 
-export const getProducts = () => {
+
+
+export const getProducts = (category) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(products);
+      const productsFiltered = category 
+      ? products.filter((product) => product.category === category)
+      : products;
+
+      resolve(productsFiltered);
     }, 1000);
+
   });
 }
 
 
+
+//producto por id
 export const getProductById = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const product = products.find((product) => product.id === id);
+      //existe producto
+      if(product){
+        resolve(product);
+      }else
+      //no existe producto
       resolve(product);
     }, 1000);
   });

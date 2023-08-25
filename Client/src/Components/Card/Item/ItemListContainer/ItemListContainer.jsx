@@ -1,6 +1,6 @@
 import styles from './ItemListContainer.module.css';
-// import Counter from '../ItemCount/ItemCount';
-import { getProducts } from '../../../asyncmock'
+
+import { getProducts } from '../../../../services/asyncmock'
 import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
 
@@ -23,7 +23,7 @@ function ItemListContainer() {
 
     return (
         <div className={styles.ItemListContainer}>
-            <ItemList products={products} />
+            <ItemList items = {[items]} />
 
         </div>
     );
