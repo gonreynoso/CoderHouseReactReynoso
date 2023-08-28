@@ -1,0 +1,30 @@
+/* ItemDetail.module.css */
+
+.itemDetailContainer {
+ border: 1px solid #ccc;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ background: #fff;
+}
+
+.title {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+
+.price {
+ font-size: 18px;
+ color: #ff5733;
+ margin-bottom: 8px;
+}
+
+.category {
+ font-size: 16px;
+ color: #888;
+ margin-bottom: 8px;
+}
+
+.description {
+ font-size: 14px;
+}

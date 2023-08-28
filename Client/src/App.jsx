@@ -1,15 +1,16 @@
 //Components and Views
 import NavBar from "../src/Components/NavBar/NavBar";
-// import Home from './Views/Home/Home'
-// import Landing from './Views/Landing/Landing'
-// import Cart from './Components/Cart/Cart'
-// import About from './Views/About/About'
-// import Contact from './Views/Contact/Contact'
+import Home from "./Views/Home/Home";
 import Footer from "./Components/Footer/Footer";
+import NotFound from "./Views/NotFound/NotFound";
+import Cart from "./Components/Cart/Cart";
+import ItemListContainer from "./Components/Item/ItemListContainer/ItemListContainer";
 
 import './App.css'
 
 import { Routes, Route } from "react-router-dom";
+import ItemDetailContainer from "./Components/Item/ItemDetailContainer/ItemDetailContainer";
+
 
 
 
@@ -18,15 +19,15 @@ function App() {
 
   return (
     <>
+      <NavBar /> 
       <Routes>
-        {/* <Route path="/" element={<> <Landing /> </>} /> */}
-        {/* <Route path="/home" element={<> <NavBar /> <Home /> <Footer /> </>} /> */}
-        <Route path="/" element={<> <NavBar />  <Footer /> </>} />
-        <Route path="/cart" element={<> <NavBar />  <Footer /> </>} />
-        <Route path="/about" element={<> <NavBar />  <Footer /> </>} />
-        <Route path="/contact" element={<> <NavBar />  <Footer /> </>} />
+        <Route path="/*" element={<> <NotFound /> </>} />
+        <Route path="/" element={<> <Home /> </>} />
+        <Route path="/category/:category" element={<> <ItemListContainer /> </>} />
+        <Route path="/item/:product_id" element={<> <ItemDetailContainer /> </>} />
+        <Route path="/cart" element={<> <Cart /> </>} />
       </Routes>
-
+      <Footer />
     </>
   )
 }

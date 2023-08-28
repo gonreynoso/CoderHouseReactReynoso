@@ -1,0 +1,20 @@
+/* NotFound.module.css */
+
+.notFoundContainer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ text-align: center;
+}
+
+.errorMessage {
+
+ margin-bottom: 20px;
+}
+
+.errorImage {
+ width: 300px;
+ height: auto;
+}

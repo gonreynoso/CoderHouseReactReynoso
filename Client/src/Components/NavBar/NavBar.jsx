@@ -1,57 +1,49 @@
 //eslint-disable-next-line
 import React from 'react';
-import styles from './NavBar.module.css'
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import styles from './NavBar.module.css';
+import { NavLink } from 'react-router-dom';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
-import CartWidget from '../CartWidget/CartWidget';
+// import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import CartWidget from '../Cart/CartWidget/CartWidget';
 import logo from '../../assets/logo-motor.jpg';
 
 const NavBar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.containerLogo}>
-          <Link className={styles.link} to="/">
-            <img src={logo} className={styles.logo} alt="logo" />
+
+      <div>
+          <NavLink className={styles.container_logo} to="/">
+            <img src={logo} className={styles.img} alt="logo" />
             <p className={styles.titulo}>MotorEnLínea</p>
-          </Link>
+          </NavLink>
         </div>
-        <ul className={styles.navList}>
-
+        <ul className={styles.ul_navList}>
           <li className={styles.navItem}>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Inicio</NavLink>
           </li>
           <li className={styles.navItem}>
-            <Link to="/about">About</Link>
+            <NavLink to="/category/camionetas">Camionetas</NavLink>
           </li>
           <li className={styles.navItem}>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/category/autos">Autos</NavLink>
           </li>
-          {/* <li className={styles.navItem}>
-          <Link to="/cart" className={styles.cartLink}>
-            <ShoppingCartIcon className={styles.cartIcon} />
-          </Link>
-        </li> */}
-
-
-
-          {/* Esto es de la 1er entrega */}
           <li className={styles.navItem}>
-            <Link to="/cart" className={styles.cartLink}>
+            <NavLink to="/category/lujo">Lujo</NavLink>
+          </li>
+          <li className={styles.navItem}>
+            <NavLink to="/carrito" className={styles.cartLink}>
               <CartWidget />
-            </Link>
+            </NavLink>
           </li>
         </ul>
+
       </nav >
-
-
-      {/* Esto es de la 1er entrega */}
-      < span >
-        <ItemListContainer greetings={"Bienvenido esto forma parte de la navBar"} />
-      </span >
     </>
   );
 };
+
+
 
 export default NavBar;
