@@ -9,17 +9,17 @@ import styles from "./ItemDetailContainer.module.css";
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
-  const { id } = useParams();
+  const { product_id } = useParams();
 
   useEffect(() => {
-    getProductById(id)
+    getProductById(product_id)
       .then((response) => {
         setItem(response);
       })
       .catch(() => {
         setItem(null);
       })
-  }, [id]);
+  }, [product_id]);
 
   return (
     <div>
