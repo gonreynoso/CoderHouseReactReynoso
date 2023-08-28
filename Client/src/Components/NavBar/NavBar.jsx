@@ -12,6 +12,7 @@ const NavBar = () => {
   return (
     <>
       <nav className={styles.navbar}>
+
       <div>
           <NavLink className={styles.container_logo} to="/">
             <img src={logo} className={styles.img} alt="logo" />
@@ -43,8 +44,6 @@ const NavBar = () => {
   );
 };
 
-NavBar.propTypes = {
 
-}
 
 export default NavBar;
