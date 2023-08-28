@@ -3,7 +3,7 @@
 const CartWidget = () => {
   return (
     <div>
-      <i className="bi bi-cart4">3</i>
+      <i className="bi bi-cart4"></i>
     </div>
   );
 };

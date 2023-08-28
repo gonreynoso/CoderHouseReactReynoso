@@ -1,70 +1,62 @@
 /* NavBar.module.css */
 
 .navbar {
- background-color: #333;
- display: flex;
- width: 100%;
+  background-color: #333;
+  display: flex;
+  width: 100%;
 
 
 }
 
-.navList {
- list-style: none;
- display: flex;
- gap: 20px;
- margin-left: 60%; /* Alinea los elementos a la derecha */
- margin-top: 20px;
- padding: auto;
+.container_logo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+
 }
+
+
+.ul_navList {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-right: 20px;
+  align-items: center;
+  margin-left: auto; /* Esto empujará los elementos a la derecha */
+
+}
+
 
 .navItem a {
- text-decoration: none;
- color: white;
- font-weight: bold;
- transition: color 0.3s ease;
- padding: auto;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: auto;
 }
 
 .navItem a:hover {
- color: #ffa500;
+  color: #ffa500;
 }
 
 .cartLink {
- text-decoration: none;
- color: white;
- font-weight: bold;
- display: flex;
- align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-.containerLogo{
-  margin: 0%;
-
-  
-}
-
-.titulo{
+.titulo {
   color: white;
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
-
-  
+  margin-left: 10px; /* Agrega un margen entre el logo y el título */
 }
 
-.logo {
+.img {
   width: 60px;
   height: 60px;
+}
 
- }
-
- .link{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    
-    margin-right: 10px;
-    gap: 10px;
- }

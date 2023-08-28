@@ -1,59 +1,68 @@
 const products = [
-  { 
-    id: 1,
-    name: 'Product 1',
+  {
+    product_id: 1,
+    name: 'Auto Deportivo Veloz:',
     price: 100,
-    description: 'Product 1 description',
-    image: 'https://picsum.photos/200/300'
+    description: 'Mercedes Benz 9873 con diseño aerodinámico corta el viento mientras su motor rugiente acelera de 0 a 100 km/h en segundos.',
+    image: 'https://picsum.photos/200/300',
+    category: 'autos'
   },
   {
-    id: 2,
-    name: 'Product 2', 
+    product_id: 2,
+    name: 'Camioneta Todoterreno Resistente',
     price: 200,
-    description: 'Product 2 description',
-    image: 'https://picsum.photos/200/300'
+    description: 'tracción en las cuatro ruedas y una estructura robusta, esta camioneta todoterreno es perfecta para aventuras fuera de la carretera.',
+    image: 'https://picsum.photos/200/300',
+    category: 'camionetas'
   },
   {
-    id: 3,
-    name: 'Product 3', 
+    product_id: 3,
+    name: 'Auto Compacto Urbano',
     price: 200,
-    description: 'Product 2 description',
-    image: 'https://picsum.photos/200/300'
+    description: 'Navega por las calles congestionadas de la ciudad con estilo en este auto compacto. ',
+    image: 'https://picsum.photos/200/300',
+    category: 'lujo'
   },
   {
-    id: 4,
-    name: 'Product 4', 
+    product_id: 4,
+    name: 'Camioneta de Lujo de Lujo',
     price: 200,
-    description: 'Product 2 description',
-    image: 'https://picsum.photos/200/300'
+    description: 'Con acabados de alta gama y comodproduct_idades de primera clase, esta camioneta de lujo redefine el viaje.',
+    image: 'https://picsum.photos/200/300',
+    category: 'camionetas'
   },
   {
-    id: 5,
-    name: 'Product 5', 
+    product_id: 5,
+    name: 'Auto Clásico de Colección',
     price: 200,
-    description: 'Product 2 description',
-    image: 'https://picsum.photos/200/300'
+    description: 'Este auto clásico evoca nostalgia y elegancia atemporal. Sus líneas elegantes y detalles cuidadosamente conservados hacen que sea un objeto de admiración en cualquier lugar al que vaya.',
+    image: 'https://picsum.photos/200/300',
+    category: 'lujo'
   },
   {
-    id: 6,
-    name: 'Product 6', 
+    product_id: 6,
+    name: 'Camioneta Compacta Versátil',
     price: 200,
-    description: 'Product 2 description',
-    image: 'https://picsum.photos/200/300'
+    description: 'Perfecta para aventuras urbanas y escapadas de fin de semana, esta camioneta compacta ofrece versatilidad en un paquete pequeño. ',
+    image: 'https://picsum.photos/200/300',
+    category: 'autos'
   },
 ];
 
 
 
+//traer productos por categoria o todos
 export const getProducts = (category) => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      const productsFiltered = category 
-      ? products.filter((product) => product.category === category)
-      : products;
+      const productsFiltered = category
+        // Si category existe filtramos por categoría
+        ? products.filter((product) => product.category === category)
+        // Si category no existe devolvemos todos los productos
+        : products;
 
       resolve(productsFiltered);
-    }, 1000);
+    }, 500);
 
   });
 }
@@ -64,13 +73,15 @@ export const getProducts = (category) => {
 export const getProductById = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      // buscamos el producto por id
       const product = products.find((product) => product.id === id);
+
       //existe producto
-      if(product){
+      if (product) {
         resolve(product);
-      }else
-      //no existe producto
-      resolve(product);
-    }, 1000);
+      } else
+        //no existe producto
+        reject("No existe el producto");
+    }, 500);
   });
 }
