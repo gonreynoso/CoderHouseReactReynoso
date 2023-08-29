@@ -1,20 +1,13 @@
 /* NavBar.module.css */
 
 .navbar {
-
   background-color: #333;
   display: flex;
-  width: 100%;
-
-
-
 }
 
 .container_logo {
   display: flex;
-  flex-direction: row;
   text-decoration: none;
-
 }
 
 
@@ -25,7 +18,6 @@
   padding-right: 20px;
   align-items: center;
   margin-left: auto; /* Esto empujará los elementos a la derecha */
-
 }
 
 
@@ -41,24 +33,30 @@
   color: #ffa500;
 }
 
-.cartLink {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
 
+.img {
+  width: 60px;
+  height: 60px;
+}
 
 .titulo{
   color: white;
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
+  transition: color 0.3s ease;
   margin-left: 10px; /* Agrega un margen entre el logo y el título */
 }
 
-.img {
-  width: 60px;
-  height: 60px;
+.titulo:hover {
+  color: #ffa500;
+}
+
+
+.cartLink {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
