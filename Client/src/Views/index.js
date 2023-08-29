@@ -1,6 +1,7 @@
-import Detail from "./Detail/detail";
-import Home from "./Home/home";
-import About from "./About/about";
+
+import Detail from "./Detail/Detail";
+import Home from "./Home/Home";
+import About from "./About/About";
 import NotFound from "./NotFound/NotFound";
 import Contact from "./Contact/Contact";
 
