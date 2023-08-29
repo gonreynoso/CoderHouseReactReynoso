@@ -1,4 +1,4 @@
-import styles from  './ItemList.module.css';
+import styles from './ItemList.module.css';
 import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -6,11 +6,11 @@ const ItemList = ({ products }) => {
   return (
     <div className={styles.main_container}>
       <h1 className={styles.title}>Productos</h1>
-      <ul className={styles.ul_list}>
+        <div className={styles.list}>
         {products.map((item) => (
-          <li key={item.id} className={styles.li}>
+          <div key={item.product_id} className={styles.card_design}>
             <Link className={styles.link} to={`/item/${item.product_id}`}>
-              <img src={item.image} alt="imagen de la tarjeta" /> 
+              <img src={item.image} alt="imagen de la tarjeta" />
               <hr />
               <p>${item.price}</p>
               <span className={styles.envioGratis}>
@@ -19,9 +19,9 @@ const ItemList = ({ products }) => {
               <p>{item.description}</p>
               <p>{item.category}</p>
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+        </div>
     </div>
   );
 };

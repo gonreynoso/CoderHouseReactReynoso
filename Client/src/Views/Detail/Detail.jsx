@@ -1,4 +1,4 @@
-import ItemDetailContainer from "../../Components/Card/ItemDetailContainer/ItemDetailContainer";
+import ItemDetailContainer from "../../Components/Item/ItemDetailContainer/ItemDetailContainer";
 
 const Detail = () => {
     return (
