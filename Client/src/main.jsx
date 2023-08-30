@@ -17,7 +17,7 @@ import '@fontsource/roboto/700.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'; 
 
-// CSS
+// CSS GLOBAL
 import './index.css'
 
 

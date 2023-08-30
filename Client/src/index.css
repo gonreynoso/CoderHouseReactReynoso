@@ -7,9 +7,7 @@
   box-sizing: border-box;
 
 }  
-
 /* Config TailwindCSS */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

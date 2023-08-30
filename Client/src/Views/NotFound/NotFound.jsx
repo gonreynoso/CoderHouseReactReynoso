@@ -1,5 +1,7 @@
 
-import styles from './NotFound.module.css'; // Importa los estilos
+import styles from './NotFound.module.css';
+import { Link } from 'react-router-dom';
+
 
 const NotFound = () => {
   return (
@@ -7,9 +9,13 @@ const NotFound = () => {
       <h1 className={styles.errorMessage}>
       Ups 😱 no encuentro la página.
       </h1>
-      <h2>
-      Vuelve atrás o utiliza el menú superior para localizar la página que buscas.
-      </h2>
+      <div>
+      <p>Vuelve atrás o utiliza el menú superior para localizar la página que buscas o también clickeando en el botón aquí debajo.</p>
+      </div>
+      <Link to="/">
+        <button className={styles.boton_volver
+        }>Volver a Inicio</button>
+      </Link>
     </div>
   );
 };
