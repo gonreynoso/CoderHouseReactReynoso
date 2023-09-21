@@ -18,3 +18,21 @@
  width: 300px;
  height: auto;
 }
+
+.boton_volver {
+ background-color: #323030;
+ color: #fffefe;
+ border: 2px solid #333333;
+ padding: 10px 20px;
+ border-radius: 5px;
+ font-size: 16px;
+ cursor: pointer;
+ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+ 
+}
+
+.boton_volver:hover {
+ background-color: #ff8800;
+ color: #ffffff;
+ border-color: #ff8800;
+}

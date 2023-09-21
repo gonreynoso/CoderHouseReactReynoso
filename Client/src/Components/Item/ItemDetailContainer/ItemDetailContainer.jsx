@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getProductById } from  "../../../services/asyncmock";
+import { getProductById } from  "../../../services/services";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { Link } from "react-router-dom";
 import styles from "./ItemDetailContainer.module.css";
@@ -10,10 +10,10 @@ import styles from "./ItemDetailContainer.module.css";
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
 
-  const { product_id } = useParams();
+  const { id } = useParams();
 
   useEffect(() => {
-    getProductById(product_id)
+    getProductById(id)
 
 
       .then((response) => {
@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
         setItem(null);
       })
 
-  }, [product_id]);
+  }, [id]);
 
 
   return (

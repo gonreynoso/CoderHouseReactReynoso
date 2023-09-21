@@ -60,3 +60,13 @@
   display: flex;
   align-items: center;
 }
+
+
+.custom_dropdown_item {
+  cursor: pointer; /* Cambiar el cursor para indicar que es interactivo */
+  color: blue; /* Cambiar el color del texto para indicar que es un enlace */
+
+  &:hover {
+    text-decoration: underline; /* Subrayar el texto cuando se pase el cursor */
+  }
+}

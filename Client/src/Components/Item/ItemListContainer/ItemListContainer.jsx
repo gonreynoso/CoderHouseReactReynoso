@@ -1,4 +1,4 @@
-import { getProducts } from '../../../services/asyncmock';
+import { getProducts } from '../../../services/services';
 import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
@@ -7,11 +7,11 @@ import { useParams } from 'react-router-dom';
 function ItemListContainer() {
 
     const [products, setProducts] = useState([])
-    const { category } = useParams()
+    const { categoryId } = useParams()
 
     useEffect(() => {
 
-        getProducts(category)
+        getProducts(categoryId)
             .then((response) => {
 
                 setProducts(response)
@@ -19,10 +19,10 @@ function ItemListContainer() {
             .catch((error) => {
                 console.log(error)
             })
-    }, [category])
+    }, [categoryId])
 
 
-
+ 
     return (
         <div >
             <ItemList products={products} />

@@ -20,16 +20,29 @@
  max-width: 220px;
  padding: 10px;
  background-color: #ffffff;
-
  margin: 10px;
- transition: transform 0.3s ease; /* Agrega una transición suave */
+ transition: transform 0.3s ease;
+ /* Agrega una transición suave */
 }
 
 .card_design:hover {
  transform: translateY(-5px); /* Levanta la tarjeta ligeramente en hover */
  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agrega una sombra adicional en hover */
+
 }
 
 .envioGratis {
  color: green;
+}
+
+
+.button {
+ color: white !important;
+ border-color: #ef9b00;
+ border-radius: 10px;
+ background-color: #FF0090;
+ text-align: center;
+ padding: 10px;
+ padding-bottom: 10px !important;
+
 }
