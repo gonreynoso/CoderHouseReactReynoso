@@ -26,15 +26,15 @@
 }
 
 .card_design:hover {
- transform: translateY(-5px);
- /* Levanta la tarjeta ligeramente en hover */
- box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
- /* Agrega una sombra adicional en hover */
+ transform: translateY(-5px); /* Levanta la tarjeta ligeramente en hover */
+ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agrega una sombra adicional en hover */
+
 }
 
 .envioGratis {
  color: green;
 }
+
 
 .button {
  color: white !important;
@@ -46,4 +46,3 @@
  padding-bottom: 10px !important;
 
 }
-
