@@ -1,29 +1,37 @@
-import { useState } from "react";
+import styles from "./ItemCount.module.css";
 
-const Counter = () => {
+const ItemCount = ({ stock, onChange, quantity }) => {
+  const increment = () => {
+    if (quantity < stock) {
+      onChange(quantity + 1);
+    }
+  };
 
-    const [count, setCount] = useState(0);
+  const decrement = () => {
+    if (quantity > 1) {
+      onChange(quantity - 1);
+    }
+  };
 
-    const increment = () => {
-        setCount(count + 1);
-    };
+  return (
+    <div className={styles["counter"]}>
+      <div className={styles["controls"]}>
+        <button
+          className={styles["btn-controls"]}
+          onClick={decrement}>
+          {" "}
+          -{" "}
+        </button>
+        <h4 className={styles["number"]}>{quantity}</h4>
+        <button
+          className={styles["btn-controls"]}
+          onClick={increment}>
+          {" "}
+          +{" "}
+        </button>
+      </div>
+    </div>
+  );
+};
 
-    const decrement = () => {
-        if (count > 0) setCount(count - 1);
-    };
-
-    return (
-        <div className="Counter">
-            <h1>Contador</h1>
-            <div>
-                <p>El contador está en: {count}</p>
-                <button onClick={increment}>Incrementar</button>
-                <button onClick={decrement}>Decrementar</button>
-            </div>
-
-        </div>
-    )
-
-}
-
-export default Counter;
+export default ItemCount;

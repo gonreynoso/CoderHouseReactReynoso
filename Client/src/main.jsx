@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 
 
-// Destructuracion de variables de entorno
+// Desestructuracion de variables de entorno
 const { 
   VITE_REACT_APP_API_KEY,
   VITE_REACT_APP_AUTH_DOMAIN,
@@ -19,18 +19,17 @@ const {
 // 1. import `NextUIProvider` component
 import { NextUIProvider } from "@nextui-org/react";
 
-// Material UI
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
 
 // Bootstrap y Bootstrap Icons
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap-icons/font/bootstrap-icons.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
 
 // CSS GLOBAL
 import './index.css'
+
+// REACT TOASTIFY
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 // FIREBASE
 // Import the functions you need from the SDKs you need
@@ -56,18 +55,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* // 2. Wrap NextUIProvider at the root of your app */}
     <NextUIProvider>
       <App />
+      <ToastContainer />
     </NextUIProvider>
   </BrowserRouter>
 )
 
-//PARA CONVERTIR LA PAGINA EN DARK MODE
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <BrowserRouter>
-//     {/* // 2. Wrap NextUIProvider at the root of your app */}
-//     <NextUIProvider>
-//       <main className="dark text-foreground bg-background">
-//         <App />
-//       </main>
-//     </NextUIProvider>
-//   </BrowserRouter>
-// )

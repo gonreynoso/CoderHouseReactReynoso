@@ -17,7 +17,7 @@ const ItemList = ({products}) => {
                 Envío gratis
               </span>
               <p>{item.description}</p>
-              <p>{item.categoryId}</p>
+              {/* <p>{item.categoryId}</p> */}
             </Link>
           </div>
         ))}

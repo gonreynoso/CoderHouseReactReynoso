@@ -9,8 +9,10 @@
 }
 
 .title {
- font-size: 24px;
- margin-bottom: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .price {
@@ -28,3 +30,39 @@
 .description {
  font-size: 14px;
 }
+
+.info_container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.boton{
+  background-color: #323030;
+  color: #fffefe;
+  border: 2px solid #333333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ 
+ .boton:hover {
+  background-color: #ff8800;
+  color: #ffffff;
+  border-color: #ff8800;
+ }
+
+ .contenedor-boton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }

@@ -10,10 +10,10 @@ import styles from "./ItemDetailContainer.module.css";
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
 
-  const { product_id } = useParams();
+  const { id } = useParams();
 
   useEffect(() => {
-    getProductById(product_id)
+    getProductById(id)
 
 
       .then((response) => {
@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
         setItem(null);
       })
 
-  }, [product_id]);
+  }, [id]);
 
 
   return (
