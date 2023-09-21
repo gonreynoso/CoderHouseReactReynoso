@@ -25,3 +25,7 @@ dist-ssr
 
 # Variables de entorno
 .env
+
+
+# Services Firestore
+.Client/src/services/coderhouse-react-reynoso-firebase-adminsdk-onwas-336a1bf8d2.json

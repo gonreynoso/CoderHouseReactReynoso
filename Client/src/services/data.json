@@ -1,0 +1,115 @@
+[
+ {
+   "categoryId": "bikes",
+   "description": "Moto Honda 2018 muy rápida y potente",
+   "price": "5000",
+   "title": "Moto Honda 2018",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto Yamaha 2023 cómoda y segura",
+   "price": "6000",
+   "title": "Moto Yamaha 2023",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto Kawasaki 2018 muy rápida y potente",
+   "price": "7000",
+   "title": "Moto Kawasaki 2018",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto Susuki 2020 muy rápida y potente",
+   "price": "8000",
+   "title": "Moto Susuki 2020",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto Harley Davidson 2021, disfrute del andar en moto",
+   "price": "9000",
+   "title": "Moto Harley Davidson 2021",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto Triumph 2023 bella para andar en las colinas",
+   "price": "10000",
+   "title": "Moto Triumph 2023",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto Ducati 2022, para amantes de la velocidad",
+   "price": "11000",
+   "title": "Moto Ducati 2022",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto KTM 2019, KTM sinónimo de calidad",
+   "price": "12000",
+   "title": "Moto KTM 2019",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "bikes",
+   "description": "Moto American Eagle 2023, descubre la libertad",
+   "price": "13000",
+   "title": "Moto American Eagle 2023",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+   "categoryId": "cars",
+   "description": "Auto Volvo Rack 2023, el auto mas seguro del mercado",
+   "price": "20000",
+   "title": "Auto Volvo Rack 2023",
+   "image": "https://picsum.photos/200/300"
+ },
+ {
+  "categoryId": "cars",
+  "description": "Auto Totota Londa 2023, toyota sinónimo de calidad",
+  "price": "20000",
+  "title": "Auto Totyota Londa 2023",
+  "image": "https://picsum.photos/200/300"
+},
+{
+ "categoryId": "cars",
+ "description": "Auto Ford Fiesta 2023, chiquito pero poderoso",
+ "price": "20000",
+ "title": "Auto Ford Fiesta 2023",
+ "image": "https://picsum.photos/200/300"
+},
+{
+ "categoryId": "cars",
+ "description": "Auto Chevrolet Romero 2023, comodidad para toda la familia",
+ "price": "20000",
+ "title": "Auto Chevrolet Romero 2023",
+ "image": "https://picsum.photos/200/300"
+},
+{
+ "categoryId": "cars",
+ "description": "Auto Hyundai Lackar 2023, veloz y seguro",
+ "price": "20000",
+ "title": "Auto Hyundai Lackar 2023",
+ "image": "https://picsum.photos/200/300"
+},
+{
+ "categoryId": "cars",
+ "description": "Auto Audi A3 2023, comodidad y lujo en un solo auto",
+ "price": "20000",
+ "title": "Auto Audi A3 2023",
+ "image": "https://picsum.photos/200/300"
+},
+{
+ "categoryId": "cars",
+ "description": "Auto Kia Sorole 2023, descubre la velocidad y la seguridad.",
+ "price": "20000",
+ "title": "Auto Kia Sorole 2023",
+ "image": "https://picsum.photos/200/300"
+}
+
+]

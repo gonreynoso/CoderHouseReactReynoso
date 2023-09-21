@@ -14,7 +14,7 @@ export const getProducts = (categoryId) => {
 
     const db = getFirestore();
 
-    const itemCollection = collection(db, 'products');
+    const itemCollection = collection(db, "products");
 
     let q;
 
@@ -41,16 +41,16 @@ export const getProducts = (categoryId) => {
 
 //producto por id
 
-export const getProductById = (product_id) => {
+export const getProductById = (categoryId) => {
   return new Promise((resolve, reject) => {
     const db = getFirestore();
-    const itemDoc = doc(db, 'products', id);
+    const itemDoc = doc(db, 'products', categoryId);
 
     getDoc(itemDoc)
       //existe producto
       .then((doc) => {
         if (doc.exists()) {
-          resolve({ id: doc.id, ...doc.data() });
+          resolve({ categoryId: doc.categoryId, ...doc.data() });
           //no existe producto
         } else {
           resolve(null);
