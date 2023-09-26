@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 
-
 // Desestructuracion de variables de entorno
 const { 
   VITE_REACT_APP_API_KEY,
@@ -14,11 +13,6 @@ const {
   VITE_REACT_APP_MESSAGING_SENDER_ID,
   VITE_REACT_APP_APP_ID
 } = import.meta.env;
-
-
-// 1. import `NextUIProvider` component
-import { NextUIProvider } from "@nextui-org/react";
-
 
 // Bootstrap y Bootstrap Icons
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -52,11 +46,8 @@ initializeApp(firebaseConfig);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    {/* // 2. Wrap NextUIProvider at the root of your app */}
-    <NextUIProvider>
       <App />
       <ToastContainer />
-    </NextUIProvider>
   </BrowserRouter>
 )
 
