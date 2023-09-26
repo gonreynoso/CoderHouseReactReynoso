@@ -7,6 +7,8 @@ import styles from './Cart.module.css';
 
 const Cart = () => {
 
+
+
   const { cart, removeItem, clearCart } = useContext(CartContext);
 
   const isEmpty = cart.length === 0;
@@ -55,7 +57,7 @@ const Cart = () => {
     </div>
     </> 
   );
-    
+}
 
 export  default Cart;
 
