@@ -1,14 +1,12 @@
 .product-cart { 
     display: flex;
     flex-direction: column;
-    border: solid 1px rgba(255, 0, 255, 0.271);
-    box-shadow: 2px 2px 4px rgba(255, 0, 255, 0.271);
     text-align: center;
     border-radius: 5px;
-    padding: 1rem;
-    background-color: pink;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
     margin-bottom: 25px;
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
 
@@ -17,13 +15,11 @@
     width: 50%;
     margin: auto;
     border-radius: 10px;
-    border: solid 1px rgba(255, 0, 255, 0.271);
-    box-shadow: 2px 2px 4px rgba(255, 0, 255, 0.271);
     cursor: pointer;
   }
 
   .btn-agregar:hover  {
-    background-color: rgba(255, 0, 255, 0.271);
+    background-color: orange;
     color: white;
   }
   

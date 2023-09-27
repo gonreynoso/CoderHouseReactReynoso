@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
 import styles from './ProductCart.module.css';
-import ItemCount from '../ItemCount/ItemCount';
+import ItemCount from '../Item/ItemCount/ItemCount';
 import { toast } from 'react-toastify';
 
 const ProductCart = React.memo(({ item }) => {
@@ -25,7 +25,7 @@ const ProductCart = React.memo(({ item }) => {
       <Link to={`/item/${item.id}`}>
         <h3 className={styles['product-name']}>{item.title}</h3>
       </Link>
-      <p className={styles['product-price']}>${item.price}</p>
+      <p className={styles['product-price']}>US${item.price}</p>
       <ItemCount
         initial={1}
         stock={item.stock}

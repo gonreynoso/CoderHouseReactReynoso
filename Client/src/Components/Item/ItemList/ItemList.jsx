@@ -1,32 +1,42 @@
 import styles from './ItemList.module.css';
-import { Link } from 'react-router-dom';
+import ProductCart from '../../ProductCart/ProductCart';
+import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
+import React, { useMemo } from 'react';
 
 
-const ItemList = ({products}) => {
-  return (
-    <div className={styles.main_container}>
-      <h1 className={styles.title}>Productos</h1>
-        <div className={styles.list}>
-        {products.map((item) => (
-          <div key={item.id} className={styles.card_design}>
-            <Link className={styles.link} to={`/item/${item.id}`}>
-              <img src={item.image} alt="imagen de la tarjeta" />
-              <hr />
-              <p>US${item.price}</p>
-              <span className={styles.envioGratis}>
-                Envío gratis
-              </span>
-              <p>{item.description}</p>
-              {/* <p>{item.categoryId}</p> */}
-            </Link>
-          </div>
-        ))}
+const ItemList = React.memo(({ items }) => {
+
+  const renderedItems = useMemo(() => {
+
+    return items.map((item) => (
+      <li key={item.id} className={styles.li}>
+        <ProductCart item={item} />
+        <ItemDetailContainer item={item} />
+      </li>
+    ));
+  }, [items]);
+
+  const productList = (
+    <>
+      <h3 className={styles['parrafo-home']}>Motor En Línea E-commerce de vehículos terrestres. El mejor sitio del país</h3>
+      <h1 className={styles['titulo-home']}>Productos: </h1>
+      <ul>
+        <div className={styles['grid-container']}>
+          {renderedItems}
         </div>
+      </ul>
+    </>
+  );
+
+  return (
+    <div>
+      {productList}
     </div>
   );
-};
-
+});
 
 
 
 export default ItemList;
+
+

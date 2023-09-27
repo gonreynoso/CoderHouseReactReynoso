@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getProductById } from  "../../../services/services";
+import { getProductById } from "../../../services/services";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import { Link } from "react-router-dom";
-import styles from "./ItemDetailContainer.module.css";
 
 //* Hacemos la logica del itemDetail
 
@@ -28,14 +26,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      <Link to="/">
-        <button className={styles.boton_volver} >
-          Volver
-        </button>
-      </Link>
-      
-      <ItemDetail item={item}/>
-
+      <ItemDetail item={item} />
     </div>
 
   )

@@ -4,6 +4,7 @@ import styles from "./ItemDetail.module.css";
 import { CartContext } from '../../Context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const ItemDetail = ({ item }) => {
   const { addItem } = useContext(CartContext);
@@ -38,6 +39,11 @@ const ItemDetail = ({ item }) => {
         quantity={quantityToAdd}
         onChange={setQuantityToAdd}
       />
+      <Link to="/">
+        <button className={styles.boton_volver} >
+          Volver
+        </button>
+      </Link>
       </div>
     </div>
   );

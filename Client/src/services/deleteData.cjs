@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./coderhouse-react-reynoso-firebase-adminsdk-onwas-336a1bf8d2.json'); // Reemplaza con la ruta a tu archivo de credenciales de servicio
+const serviceAccount = require('./firebase-admin-config.json'); // Reemplaza con la ruta a tu archivo de credenciales de servicio
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
