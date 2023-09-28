@@ -28,12 +28,12 @@ MotorEnLínea is an ecommerce that offers cars and bikes products for sale. The 
 
 ## Screenshots
 
-![Captura de Pantalla](public/img/captura-home.png)
-![Captura de Pantalla](public/img/captura-categoria-autos.png)
-![Captura de Pantalla](public/img/captura-categoria-motos.png)
-![Captura de Pantalla](public/img/captura-carrito.png)
-![Captura de Pantalla](public/img/captura-formulario.png)
-![Captura de Pantalla](public/img/captura-finalizar-compra.png)
+![Captura de Pantalla](Client/public/img/captura-home.png)
+![Captura de Pantalla](Client/public/img/captura-categoria-autos.png)
+![Captura de Pantalla](Client/public/img/captura-categoria-motos.png)
+![Captura de Pantalla](Client/public/img/captura-carrito.png)
+![Captura de Pantalla](Client/public/img/captura-formulario.png)
+![Captura de Pantalla](Client/public/img/captura-finalizar-compra.png)
 
 ## Requirements
 
