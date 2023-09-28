@@ -15,7 +15,7 @@ const NavBar = () => {
       </NavLink>
       <ul className={styles.ul_navList}>
         <li className={styles.navItem}>
-          <NavLink to="/">Inicio</NavLink>
+          <NavLink to="/">Inicio</NavLink> 
         </li>
         <li className={styles.navItem}>
           <NavLink to="/category/cars">Autos</NavLink>
