@@ -6,7 +6,7 @@ MotorEnLínea is an ecommerce that offers cars and bikes products for sale. The 
 
 1. [Description](#description)
 2. [Characteristics](#characteristics)
-3. [Screenshots](#screenshot)
+3. [Screenshots](#screenshots)
 4. [Requirements](#requirements)
 5. [Installation](#installation)
 6. [Use](#use)
