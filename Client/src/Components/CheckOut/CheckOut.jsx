@@ -98,7 +98,7 @@ function CheckOut() {
               </li>
             ))}
           </ul>
-          <p className={styles['checkout-total']}>Total: ${calculateTotal()}</p>
+          <p className={styles['checkout-total']}>Total: US${calculateTotal()}</p>
           <Link to="/">
             <button className={styles['boton-volver']}>Volver</button>
           </Link>

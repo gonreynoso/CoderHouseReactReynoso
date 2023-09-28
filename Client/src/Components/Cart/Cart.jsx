@@ -22,6 +22,13 @@ const Cart = () => {
   return (
     <>
       <h1 className={styles['h1-cart']}>Carrito</h1>
+      <div className={styles['cart-container']}>
+        <p className={styles['cart-p']}>Total: ${calculateTotal()}</p>
+        <button className={styles['vaciar-cart']} onClick={() => clearCart()}>Vaciar carrito</button>
+        <Link to="/checkout">
+          <button className={styles['comprar-cart']}>Realizar compra</button>
+        </Link>
+      </div>
       <div className={styles.container}>
         {isEmpty ? (
           <div>
@@ -33,7 +40,7 @@ const Cart = () => {
             <ul className={styles.ul}>
               {cart.map((item) => (
                 <li key={item.id} className={styles['li-cart']}>
-                  <div className={styles.container}>
+                  <div className={styles.divcontainer}>
                     <h3 className={styles['name-cart']}>{item.title}</h3>
                     <img className={styles['img-cart']} src={`/img/${item.imageId}`} alt={item.title} />
                     <p className={styles['price-cart']}>Precio: ${item.price}</p>
@@ -43,13 +50,7 @@ const Cart = () => {
                 </li>
               ))}
             </ul>
-            <div className={styles['cart-container']}>
-              <p className={styles['cart-p']}>Total: ${calculateTotal()}</p>
-              <button className={styles['vaciar-cart']} onClick={() => clearCart()}>Vaciar carrito</button>
-              <Link to="/checkout">
-                <button className={styles['comprar-cart']}>Realizar compra</button>
-              </Link>
-            </div>
+
           </div>
         )}
       </div>
@@ -57,7 +58,7 @@ const Cart = () => {
   );
 };
 
-export  default Cart;
+export default Cart;
 
 
 

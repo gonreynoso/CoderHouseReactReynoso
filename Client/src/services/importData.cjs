@@ -1,12 +1,12 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./coderhouse-react-reynoso-firebase-adminsdk-onwas-336a1bf8d2.json'); // Ruta al archivo de credenciales
+const serviceAccount = require('./firebase-admin-config.json'); // Ruta al archivo de credenciales
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
 
 // Nombre de la colección que deseas borrar
-const collectionName = 'products'; // Reemplaza con el nombre de tu colección
+const collectionName = 'items'; // Reemplaza con el nombre de tu colección
 
 
 const db = admin.firestore();

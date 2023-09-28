@@ -6,6 +6,21 @@
  border-radius: 5px;
  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
  background: #fff;
+ display: flex;
+  flex-direction: column;
+}
+
+.product-image{
+  object-fit: cover;
+  height: 40%;
+  width: 40%
+}
+
+.product-price{
+  font-weight: bolder;
+  font-size: 30px;
+  color: orange;
+  margin-bottom: 8px;
 }
 
 .title {
@@ -36,6 +51,7 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
+
 }
 
 .boton{
@@ -65,4 +81,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ }
+
+ .boton_volver {
+  background-color: #323030;
+  color: #fffefe;
+  border: 2px solid #333333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  
+ }
+ 
+ .boton_volver:hover {
+  background-color: #ff8800;
+  color: #ffffff;
+  border-color: #ff8800;
  }
