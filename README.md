@@ -5,11 +5,13 @@ MotorEnLínea is an ecommerce that offers cars and bikes products for sale. The 
 ## Table of Contents
 
 1. [Description](#description)
-3. [Characteristics](#characteristics)
-5. [Requirements](#requirements)
-6. [Installation](#installation)
-7. [Use](#use)
-8. [License](#license)
+2. [Characteristics](#characteristics)
+3. [Screenshots](#screenshot)
+4. [Requirements](#requirements)
+5. [Installation](#installation)
+6. [Use](#use)
+7. [License](#license)
+
 
 ## Description
 
@@ -24,6 +26,14 @@ MotorEnLínea is an ecommerce that offers cars and bikes products for sale. The 
 - User registration with a form.
 - Generation of orders and management of products in Firestore.
 
+## Screenshots
+
+![Captura de Pantalla](public/img/captura-home.png)
+![Captura de Pantalla](public/img/captura-categoria-autos.png)
+![Captura de Pantalla](public/img/captura-categoria-motos.png)
+![Captura de Pantalla](public/img/captura-carrito.png)
+![Captura de Pantalla](public/img/captura-formulario.png)
+![Captura de Pantalla](public/img/captura-finalizar-compra.png)
 
 ## Requirements
 
@@ -62,3 +72,4 @@ The main section of the page has a list of all the products that the company off
 ## License
 
 This is a project for educational purposes, so it does not have commercial functionality, nor does it offer sensitive data. All products are fictitious, cannot be used for commercial purposes.
+
