@@ -18,9 +18,9 @@ const ItemList = React.memo(({ items }) => {
 
   const productList = (
     <>
-      <h3 className={styles['parrafo-home']}>Motor En Línea E-commerce de vehículos terrestres. El mejor sitio del país</h3>
       <h1 className={styles['titulo-home']}>Productos: </h1>
-      <ul>
+      <h5 className={styles['parrafo-home']}>Motor En Línea E-commerce de vehículos terrestres. El mejor sitio del país para comprar tu auto</h5>
+      <ul className={styles.ul}>
         <div className={styles['grid-container']}>
           {renderedItems}
         </div>

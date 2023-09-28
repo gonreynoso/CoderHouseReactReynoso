@@ -27,7 +27,7 @@ const ItemDetail = ({ item }) => {
     <div className={styles.itemDetailContainer}>
       <h1 className={styles.title}>{item.title}</h1>
       <div className={styles.info_container}>
-        <img src={item.image} alt={item.title} className={styles['product-image']} />
+        <img src={`../../../../public/img/${item.imageId}`} alt={item.title} className={styles['product-image']} />
         <p className={styles['product-price']}>US$ {item.price}</p>
         <p className={styles['product-detalle']}>{item.description}</p>
       </div>

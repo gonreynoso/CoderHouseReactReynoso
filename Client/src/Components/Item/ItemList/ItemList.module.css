@@ -1,3 +1,13 @@
+.titulo-home{
+    text-align: center;
+    margin: 20px;
+}
+
+.parrafo-home{
+    text-align: center;
+    margin: 20px;
+}
+
 .title {
  text-align: center;
 }
@@ -41,4 +51,9 @@
  grid-gap: 10px;
  padding: 10px;
 
+}
+
+.ul{
+ padding: 0px;
+ margin: 0px;
 }

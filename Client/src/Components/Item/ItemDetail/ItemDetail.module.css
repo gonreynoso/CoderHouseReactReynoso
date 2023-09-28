@@ -10,6 +10,19 @@
   flex-direction: column;
 }
 
+.product-image{
+  object-fit: cover;
+  height: 40%;
+  width: 40%
+}
+
+.product-price{
+  font-weight: bolder;
+  font-size: 30px;
+  color: orange;
+  margin-bottom: 8px;
+}
+
 .title {
  display: flex;
  flex-direction: column;
