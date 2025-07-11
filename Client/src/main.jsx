@@ -1,5 +1,4 @@
 //eslint-disable-next-line
-import * as React from "react";
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
@@ -28,19 +27,23 @@ import { ToastContainer } from 'react-toastify';
 // FIREBASE
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBzgE8rJJPdIeZZ1FH9rgbtQCKTrXjV-s8",
-  authDomain: "coderhouse-react-reynoso.firebaseapp.com",
-  projectId: "coderhouse-react-reynoso",
-  storageBucket: "coderhouse-react-reynoso.appspot.com",
-  messagingSenderId: "630247140330",
-  appId: "1:630247140330:web:c1390c04a0a11ba29da093"
+  apiKey: VITE_REACT_APP_API_KEY,
+  authDomain: VITE_REACT_APP_AUTH_DOMAIN,
+  projectId: VITE_REACT_APP_PROJECT_ID,
+  storageBucket: VITE_REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: VITE_REACT_APP_MESSAGING_SENDER_ID,
+  appId: VITE_REACT_APP_APP_ID
 };
 
-// Initialize Firebase
-initializeApp(firebaseConfig);
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export { db };
 
 
 
